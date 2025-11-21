@@ -1,32 +1,26 @@
-# Simplified-Crypto-Trading-Bot-Binance-Futures-Testnet-
 
-# 🚀 Simplified Crypto Trading Bot (Binance Futures Testnet)
+# Simplified Trading Bot (Binance Futures Testnet)
 
-This repository contains a fully functional Python-based trading bot developed as part of the **Junior Python Developer – Crypto Trading Bot** assignment.
+This repository contains the assignment solution for the Junior Python Developer – Crypto Trading Bot position.
 
-The bot interacts with the **Binance Futures USDT-M Testnet**, supports multiple order types, handles signed REST calls, validates user input, and logs all API activity.
+## How to Run
+1. Install dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
 
----
+2. Set environment variables:
+   ```
+   export BINANCE_API_KEY="your_key"
+   export BINANCE_API_SECRET="your_secret"
+   ```
 
-## ⭐ Features
+3. Run a market order test:
+   ```
+   python basic_bot.py market --symbol BTCUSDT --side BUY --quantity 0.001
+   ```
 
-### ✔ Core Requirements
-- **Market Orders**  
-- **Limit Orders**  
-- **Stop-Market Orders**
-- **BUY/SELL support**
-- **USDT-M Binance Futures Testnet**
-- **REST API with HMAC SHA256 signature**
-- **Command-line interface (CLI)**
-- **Comprehensive logging (requests, responses & errors)**  
-- **Clean, modular, and reusable OOP design**
-
-### 🎁 Bonus Features
-- **TWAP Strategy (Time-Weighted Average Price)**  
-- **Enhanced CLI structure**  
-- Ready for further extension (OCO, Stop-Limit, Grid, UI, etc.)
-
----
-
-## 📁 Project Structure
-
+## Files
+- `basic_bot.py` : Main bot implementation
+- `requirements.txt`
+- `README.md`
